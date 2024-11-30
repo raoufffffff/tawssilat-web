@@ -1,9 +1,8 @@
-import { Outlet } from "react-router-dom"
-import Header from "./compunent/header/Header"
-import Footer from "./compunent/footer/Footer"
+import Header from "./components/header/Header"
+import Home from "./components/Home/Home"
+import Vidoe from "./components/vidoe/Vidoe"
 
 function App() {
-
   return (
     <div
       className='w-full   overflow-hidden'
@@ -12,9 +11,12 @@ function App() {
       <div
         className="min-h-96"
       >
-        <Outlet />
+        <Vidoe />
+        <Home />
+        <div
+          className="w-9/12 h-[0.5px] my-5 bg-[#3337] mx-auto"
+        ></div>
       </div>
-      <Footer />
 
     </div>
   )
